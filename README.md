@@ -12,7 +12,7 @@ The dimensional model contains a fact table and multiple dimension tables that a
 https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i/about_data
 
 ## Files Included
-- Data Dictionary (Excel form)
+- Data Dictionary (Excel form, make sure to download the raw form of it to access it.)
 - Information Architecture Diagram
 - Data Architecture Diagram
 - Dimensional Model Diagram
