@@ -1,0 +1,11 @@
+Source Column,Destination Column,Data Type,Transformation Rule,Description
+cmplnt_fr_dt,complaint_date,Date,Converted to YYYY-MM-DD,Standardized complaint date
+cmplnt_fr_dt,year,Integer,Extracted year from complaint date,Year of complaint
+cmplnt_fr_dt,month,Integer,Extracted month from complaint date,Month of complaint
+cmplnt_fr_dt,day,Integer,Extracted day from complaint date,Day of complaint
+cmplnt_fr_dt,quarter,Integer,Extracted quarter from complaint date,Quarter of complaint
+law_cat_cd,is_felony,Integer,FELONY = 1 otherwise 0,Flag showing whether complaint is felony
+boro_nm,boro_nm,String,Removed rows with missing values,Borough where complaint occurred
+ofns_desc,ofns_desc,String,Removed rows with missing values,Offense description
+law_cat_cd,law_cat_cd,String,Removed rows with missing values,Crime severity/category
+All columns,All columns,Varies,Removed duplicate rows,Duplicate complaint records removed
