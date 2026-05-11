@@ -71,7 +71,7 @@ The system boundaries also include the user interface, the data processing syste
 
 # Data Dictionary
 
-<img width="1920" height="936" alt="nypd_data_dictionary - Excel 5_3_2026 6_42_43 PM" src="https://github.com/user-attachments/assets/fed715dc-073c-45dc-964b-71417f725c8c" />
+<img width="672" height="664" alt="nypd_data_dictionary - Excel 5_3_2026 6_42_43 PM" src="https://github.com/user-attachments/assets/96eb0fe2-3288-4da0-833a-eff6debcb8ea" />
 
 The purpose of developing this data dictionary is to give an understanding of the data structures that exist within the chosen dataset in this study. This is achieved by providing all the essential details such as the name of the column, its description, data types, and any constraints associated with it. This will help understand what each field represents and how data can be used for analysis. 
 All the information that I used to build the data dictionary was based on the PDF document that was provided to me by the NYC Open Data and my own understanding of what the data is about.
