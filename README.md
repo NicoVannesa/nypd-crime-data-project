@@ -116,9 +116,14 @@ The Azure Storage account and Blob Container were created to store the following
 
 ### Azure Storage Structure
 
-The structure of Azure should have a storage with the name nypdcrimeproject, and inside that, there should be 2 dictionary folders with the names transformed and scripts. Inside the transformed folder, the following files should be inside: dim_crime.csv, dim_date.csv, dim_location.csv, dim_premises.csv, dim_suspect.csv, and nypd_complaint_transformed.csv. Inside the scripts folder, the following files should be inside: 01_source_data.py, 02_transform_data.py, 03_load_to_warehouse.sql, and 04_load_data.py.
+The structure of Azure should have a storage with the name nypdcrimeproject, and inside that, there should be 2 dictionary folders with the names transformed and scripts. 
 
-The data was uploaded to Azure Blob Storage in 5/11 and 5/12 of 2026 due to corrections and errors.
+Inside the transformed folder, the following files should be inside: dim_crime.csv, dim_date.csv, dim_location.csv, dim_premises.csv, dim_suspect.csv, and nypd_complaint_transformed.csv. 
+
+Inside the scripts folder, the following files should be inside: 01_source_data.py, 02_transform_data.py, 03_load_to_warehouse.sql, and 04_load_data.py.
+
+
+The data was uploaded to Azure Blob Storage on 5/11 and 5/12 of 2026 due to corrections and errors.
 
 <img width="1920" height="864" alt="nypdcrimeproject - Microsoft Azure - Google Chrome 5_12_2026 7_01_27 PM" src="https://github.com/user-attachments/assets/ddfed64f-026f-43ae-9b3f-6d7a7320b54e" />
 
