@@ -6,6 +6,7 @@ Dataset name: NYPD Complaint Data Historic
 Dataset source: https://data.cityofnewyork.us/browse
 Link to the data: NYPD Complaint Data Historic | NYC Open Data
 GitHub Link: https://github.com/NicoVannesa/nypd-crime-data-project
+Azure Link: https://nypdcrimestorage.blob.core.windows.net/nypdcrimeproject?sp=racwdl&st=2026-05-12T07:33:05Z&se=2026-05-31T15:48:05Z&spr=https&sv=2025-11-05&sr=c&sig=MTnEOjWyOMKPkdUVbu4R3WWJYKSg5nZ5JCzp0nRbjxI%3D
 
 The following project is based on the NYPD Complaint Data Historic dataset from NYC Open Data.
 The main target of this project is to analyze crime complaint data and understand different patterns based on location, type of crime, time and many other factors.
@@ -98,4 +99,27 @@ Next, we have the relationships between the fact table and the dimension tables.
 
 The star structure improves the data organization and allows for more efficient analysis, because it helps separate descriptive attributes from the main transactional data.
 
-(CONTINUATION COMING SOON!)
+## Cloud Storage Integration
+
+To improve the organization and scalability of the selected project structure, Azure Blob Storage was integrated into the project workflow to help.
+
+The Azure Storage account and Blob Container were created to store the following:
+
+- transformed datasets
+- dimensional tables
+- ETL scripts
+- warehouse loading scripts
+
+### Azure Storage Structure
+
+The structure of Azure should have a storage with the name nypdcrimeproject, and inside that, there should be 2 dictionary folders with the names transformed and scripts. Inside the transformed folder, the following files should be inside: dim_crime.csv, dim_date.csv, dim_location.csv, dim_premises.csv, dim_suspect.csv, and nypd_complaint_transformed.csv. Inside the scripts folder, the following files should be inside: 01_source_data.py, 02_transform_data.py, 03_load_to_warehouse.sql, and 04_load_data.py.
+
+The data was uploaded to Azure Blob Storage in 5/11 and 5/12 of 2026 due to corrections and errors.
+
+<img width="1920" height="864" alt="nypdcrimeproject - Microsoft Azure - Google Chrome 5_12_2026 7_01_27 PM" src="https://github.com/user-attachments/assets/ddfed64f-026f-43ae-9b3f-6d7a7320b54e" />
+
+<img width="1920" height="868" alt="nypdcrimeproject - Microsoft Azure - Google Chrome 5_12_2026 7_01_33 PM" src="https://github.com/user-attachments/assets/2abae276-ac0f-494f-9dd3-509fdde54c65" />
+
+<img width="1920" height="864" alt="nypdcrimeproject - Microsoft Azure - Google Chrome 5_12_2026 7_01_44 PM" src="https://github.com/user-attachments/assets/ebcb48f1-82b2-4dca-a21e-c14d2d45adf4" />
+
+
