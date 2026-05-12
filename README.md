@@ -131,4 +131,72 @@ The data was uploaded to Azure Blob Storage on 5/11 and 5/12 of 2026 due to corr
 
 <img width="1920" height="864" alt="nypdcrimeproject - Microsoft Azure - Google Chrome 5_12_2026 7_01_44 PM" src="https://github.com/user-attachments/assets/ebcb48f1-82b2-4dca-a21e-c14d2d45adf4" />
 
+---
 
+### ETL Process
+
+For this project, I used a Python-based ETL workflow to prepare the NYPD complaint data for analytics and visualization. I also used Python scripts on the raw NYPD complaint dataset, which was sourced again from the NYC Open Data. As for the data transformation process, it includes standardizing date formats, splitting dates to year, month, and day, removing any null values when necessary, removing duplicate records, creating transformed analytical columns and finally preparing dimensional tables for warehouse modeling.
+
+Any transformed datasets and dimensional tables that were made, were prepared for loading into the warehouse structure using SQL warehouse scripts.
+
+---
+
+### Data Transformation and Dimensional Tables
+
+For a better understanding of the project, multiple-dimensional tables were created. The dimensional tables include:
+
+- Crime Dimension
+- Date Dimension
+- Location Dimension
+- Premises Dimension
+- Suspect Dimension
+
+## Power BI Dashboard
+
+A Power BI dashboard was developed to visualize the transformed NYPD complaint data.
+
+<img width="1311" height="743" alt="Power BI Desktop" src="https://github.com/user-attachments/assets/3b97ffd3-880c-4f98-a8c6-8028b9d7b509" />
+
+The dashboard should include:
+
+- interactive filtering tools
+- pie chart visualization
+- column chart visualization
+- line chart visualization
+- heat map/treemap visualization
+
+This allows the users to:
+
+- analyze crime complaint distributions
+- Compare crime activity by borough
+- view crime trends over time
+- explore crime density patterns
+
+## Visualization Features
+
+## Pie Chart
+Displays the distribution of crime categories.
+
+## Column Chart
+Displays crime complaints by borough.
+
+## Line Chart
+Displays crime complaint trends by day.
+
+## Heat Map / Treemap
+Displays crime density across boroughs.
+
+## Interactive Filtering
+Allows all visualizations to dynamically update based on selected borough filters.
+
+### Repository Deliverables
+
+The repository contains:
+- ETL scripts
+- transformed datasets
+- dimensional tables
+- warehouse loading scripts
+- Power BI dashboard files
+- Azure Blob Storage integration
+- project documentation
+- diagrams and modeling files 
